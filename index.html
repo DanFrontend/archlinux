@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="./index.js"></script> -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Test</title>
+</head>
+<body>
+    <main class="archlinux">
+        <div class="archlinux-innerwrap">
+            <header class="archlinux__header">
+                <div class="archlinux__header-logo">
+                    <img class="archlinux__header-logo-img" src="./img/233.svg"/>
+                </div>
+                <h1 class="archlinux__header-title">
+                    УЗНАЙТЕ СТОИМОСТЬ ПРОЕКТА ОНЛАЙН
+                </h1>
+                <div class="archlinux__header-text">
+                    Пройдите тест для расчета предварительной стоимости проекта
+                </div>
+                <span class="archlinux__header-button">НАЧАТЬ ТЕСТ</span>
+            </header>
+
+            <section class="archlinux__test">
+                <div class="archlinux__test-header">            
+                    <div class="archlinux__test-header-logo">
+                        <img class="archlinux__test-header-logo-img" src="./img/233.svg"/>
+                    </div>
+                    <h1 class="archlinux__test-header-title">
+                        Выберите тип сайта:
+                    </h1>       
+                </div>
+                <div class="archlinux__test-items">
+                    <div class="archlinux__test-item" id="landing">
+                        LANDING PAGES
+                    </div>
+                    <div class="archlinux__test-item" id="visit">
+                    САЙТ ВИЗИТКА
+                    </div>
+                    <div class="archlinux__test-item" id="corporative">
+                        КОРПОРАЬИВНЫЙ САЙТ
+                    </div>
+                    <div class="archlinux__test-item" id="promo">
+                        ПРОМО САЙТ
+                    </div>
+                    <div class="archlinux__test-item" id="internet">
+                        ИНТЕРНЕТ МАГАЗИН
+                    </div>
+                    <div class="archlinux__test-item" id="servise">
+                        СЕРВИСНОЕ ПРЕДЛОЖЕНИЕ
+                    </div>
+                </div>
+            </section>
+
+            <section class="archlinux__price">
+                <div class="archlinux__price-logo">
+                    <img class="archlinux__price-logo-img" src="./img/233.svg"/>
+                </div>
+                <h1 class="archlinux__price-title">
+                    СТОИМОСТЬ ВАШЕГО ПРОЕКТА ОТ <span id="many"></span> $
+                </h1>
+                <div class="archlinux__price-text">
+                    Оставить заявку на точный расчет:
+                </div>
+                <form onsubmit="alert('Спасибо')">
+                    <input class="archlinux__price-tel" pattern="[^0-9]380[0-9]{9}" type="tel" id="phone" name="phone" placeholder="+38 (0..)"/>
+                    <input class="archlinux__price-order" onClick="return Formdata(this.form)" type="submit" value="ЗАКАЗАТЬ">
+                </form>
+            </section>
+
+            <section class="archlinux__sidebar">
+                <h2 class="archlinux__sidebar-title">
+                    Знакомьтесь
+                </h2>
+                <div class="archlinux__sidebar-photo">
+                    <img class="archlinux__sidebar-photo-img" src="./img/Photo.png"/>
+                </div>
+                <h3 class="archlinux__sidebar-name">
+                    Дмитрий Тищенко
+                </h3>
+                <div class="archlinux__sidebar-text">
+                    Ваш будущий менеджер проектов
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        var button = document.querySelector('.archlinux__header-button');
+        var header = document.querySelector('.archlinux__header');
+        var test = document.querySelector('.archlinux__test');
+        var price = document.querySelector('.archlinux__price');
+        var many = document.querySelector('#many');
+
+        var item = document.querySelectorAll('.archlinux__test-item');
+
+        button.addEventListener('click', ()=> {
+            header.style.display = 'none';
+            test.style.display = 'block';
+        });
+
+        for (var i = 0; i < item.length; i++) {
+            item[i].addEventListener('click', (e)=> {
+                test.style.display = 'none';
+                price.style.display = 'block'
+
+                if(e.target.id == 'landing') {
+                    many.innerHTML = '100'
+                }
+                if(e.target.id == 'visit') {
+                    many.innerHTML = '200'
+                }
+                if(e.target.id == 'corporative') {
+                    many.innerHTML = '300'
+                }
+                if(e.target.id == 'promo') {
+                    many.innerHTML = '400'
+                }
+                if(e.target.id == 'internet') {
+                    many.innerHTML = '500'
+                }
+                if(e.target.id == 'servise') {
+                    many.innerHTML = '600'
+                }
+            })
+        }
+
+        function Formdata(data){
+            if (data.phone != null && data.phone.value.length == 0 ) {
+                alert('Заполните номер телефона');
+                return false;
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+body {
+  background: url("./img/back.png"); }
+
+.archlinux-innerwrap {
+  display: flex;
+  justify-content: center; }
+.archlinux__header {
+  padding-top: 40px;
+  padding-left: 100px;
+  border-radius: 5px;
+  background: #FFF;
+  background-image: url("./img/Clip.png");
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 670px;
+  height: 954px;
+  margin-right: 30px; }
+  .archlinux__header-logo-img {
+    width: 211px; }
+  .archlinux__header-title {
+    font-family: arial;
+    font-size: 72px;
+    font-weight: 400;
+    color: #7358FB;
+    width: 500px;
+    line-height: 75px;
+    margin: 114px 0 48px 0; }
+  .archlinux__header-text {
+    font-family: arial;
+    font-size: 24px;
+    font-weight: 400;
+    color: #333333;
+    letter-spacing: 2.2px;
+    width: 600px;
+    word-spacing: -5px;
+    line-height: 38px;
+    margin-bottom: 56px; }
+  .archlinux__header-button {
+    background: linear-gradient(90deg, #7257FB, #BF7DE7);
+    font-family: arial;
+    font-size: 18.67px;
+    font-weight: 400;
+    color: #FFF;
+    letter-spacing: 3.5px;
+    word-spacing: -5px;
+    border-radius: 31px;
+    padding: 21px 74px 19px 77px;
+    cursor: pointer; }
+.archlinux__sidebar {
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 370px;
+  height: 994px;
+  background: #FFF;
+  background-image: url("./img/Clip-sidebar.png"); }
+  .archlinux__sidebar-title {
+    font-family: arial;
+    font-size: 30.67px;
+    font-weight: 400;
+    color: #FFF;
+    background: #A971ED;
+    border-radius: 5px 5px 0 0;
+    letter-spacing: 2px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 53px 0; }
+  .archlinux__sidebar-photo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 45px; }
+    .archlinux__sidebar-photo:before {
+      content: '';
+      width: 38px;
+      height: 38px;
+      position: absolute;
+      background: linear-gradient(50deg, #D59FBF, #F3D6AA);
+      border-radius: 50%;
+      right: 81px;
+      bottom: 22px; }
+    .archlinux__sidebar-photo-img {
+      padding: 27px;
+      border: 3px solid #7559FA;
+      border-radius: 50%; }
+  .archlinux__sidebar-name {
+    font-family: arial;
+    font-size: 29.33px;
+    font-weight: 100;
+    color: #333333;
+    letter-spacing: 2.7px;
+    text-align: center;
+    border-bottom: 1px solid #D2D2D2;
+    margin: 0 40px 27px 40px;
+    padding-bottom: 19px; }
+  .archlinux__sidebar-text {
+    font-family: arial;
+    font-size: 26.67px;
+    font-weight: 400;
+    color: #909090;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 0 30px;
+    line-height: 34px; }
+.archlinux__test {
+  display: none;
+  width: 770px;
+  margin-right: 30px; }
+  .archlinux__test-header {
+    background: #FFF;
+    box-shadow: -2.5px 4.33px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    height: 283px;
+    padding-top: 41px;
+    box-sizing: border-box;
+    padding: 41px 0 49px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 39px; }
+    .archlinux__test-header-logo-img {
+      width: 211px; }
+    .archlinux__test-header-title {
+      font-family: arial;
+      font-size: 42.67px;
+      font-weight: 400;
+      color: #0E1621;
+      margin: 0;
+      letter-spacing: 5.3px; }
+  .archlinux__test-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .archlinux__test-item {
+    width: 370px;
+    height: 205.72px;
+    border-radius: 5px;
+    box-shadow: -2.5px 4.33px 15px rgba(0, 0, 0, 0.2);
+    background: #FFF;
+    background-image: url("./img/Clip-test.png");
+    font-family: arial;
+    font-size: 18.65px;
+    font-weight: 400;
+    color: #7759FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 27px;
+    cursor: pointer; }
+.archlinux__price {
+  display: none;
+  padding-top: 40px;
+  padding-left: 100px;
+  border-radius: 5px;
+  background: #FFF;
+  background-image: url("./img/Clip.png");
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 670px;
+  height: 954px;
+  margin-right: 30px; }
+  .archlinux__price-logo-img {
+    width: 211px; }
+  .archlinux__price-title {
+    font-family: arial;
+    font-size: 72px;
+    font-weight: 400;
+    color: #7358FB;
+    width: 500px;
+    line-height: 75px;
+    margin: 114px 0 48px 0; }
+  .archlinux__price-text {
+    font-family: arial;
+    font-size: 24px;
+    font-weight: 400;
+    color: #333333;
+    letter-spacing: 2.2px;
+    width: 600px;
+    word-spacing: -5px;
+    line-height: 38px;
+    margin-bottom: 56px; }
+  .archlinux__price-order {
+    background: linear-gradient(90deg, #7257FB, #BF7DE7);
+    font-family: arial;
+    font-size: 18.67px;
+    font-weight: 900;
+    color: #FFF;
+    letter-spacing: 3.5px;
+    word-spacing: -5px;
+    border-radius: 31px;
+    border: none;
+    padding: 21px 43px 18px 50px;
+    cursor: pointer; }
+  .archlinux__price-tel {
+    font-family: arial;
+    font-size: 21.33px;
+    font-weight: 400;
+    color: #333333;
+    border-radius: 31px;
+    border: 1px solid #DCDCDC;
+    height: 56px;
+    width: 275px;
+    padding-left: 30px;
+    outline: none;
+    margin-right: 20px; }
+
+@media only screen and (max-width: 1142px) {
+  .archlinux__header {
+    margin-right: 0; }
+  .archlinux__sidebar {
+    display: none; }
+  .archlinux__price {
+    margin-right: 0; }
+    .archlinux__price form {
+      display: flex;
+      flex-direction: column; }
+    .archlinux__price-order {
+      width: 305px;
+      margin-top: 15px; } }
+@media only screen and (max-width: 790px) {
+  .archlinux__test-items {
+    justify-content: center; } }
+@media only screen and (max-width: 644px) {
+  .archlinux__header, .archlinux__price, .archlinux__test {
+    padding-left: 30px; }
+    .archlinux__header-title, .archlinux__price-title, .archlinux__test-title {
+      font-size: 44px;
+      width: auto; }
+    .archlinux__header-text, .archlinux__price-text, .archlinux__test-text {
+      width: 320px; }
+  .archlinux__header-button {
+    font-size: 14px;
+    padding: 21px 54px 19px 57px; } }
+
+/*# sourceMappingURL=style.css.map */
